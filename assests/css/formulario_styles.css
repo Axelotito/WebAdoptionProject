@@ -187,3 +187,60 @@ footer a:hover {
   color: #6b7280;
   font-size: 0.875rem;
 }
+
+/* =========================================
+   LÓGICA CONDICIONAL PURA CON CSS
+   ========================================= */
+
+.hidden-section {
+  display: none;
+}
+
+/* Mostrar preferencias cuando se selecciona Perro o Gato */
+#pet-dog:checked ~ .conditional-preferences,
+#pet-cat:checked ~ .conditional-preferences {
+  display: block;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Mostrar campo de texto cuando se selecciona Otro */
+#pet-other:checked ~ .conditional-other {
+  display: block;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Estilos de las etiquetas de selección (Perro, Gato, Otro) */
+.pet-selector-btn {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid rgba(230, 149, 109, 0.3);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  background-color: var(--background-light);
+  color: var(--text-main);
+  font-weight: 700;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.pet-selector-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: rgba(236, 91, 19, 0.05);
+}
+
+/* Cambio visual en las etiquetas cuando su radio button asociado está marcado */
+#pet-dog:checked ~ .pet-selection-wrapper .label-dog,
+#pet-cat:checked ~ .pet-selection-wrapper .label-cat,
+#pet-other:checked ~ .pet-selection-wrapper .label-other {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(236, 91, 19, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
