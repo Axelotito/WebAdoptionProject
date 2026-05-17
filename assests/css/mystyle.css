@@ -1,0 +1,256 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+
+/* Barra de navegacion */
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #221610;
+}
+
+.nav-link {
+    color: #221610;
+    font-weight: 500;
+}
+
+.btn.boton-adoptar {
+    background-color: #E6956D;
+    color: white;
+    border-radius: 9999px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.boton-adoptar:hover {
+    background-color: #E6956D;
+    color: white;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 750px;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.45),
+            rgba(255, 255, 255, 0.65)),
+        url("/assests/imagenes/heroimg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-contenido {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: 0;
+    color: #1d0f0b;
+}
+
+.hero span {
+    color: #EC5B13;
+}
+
+.hero p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #4A3A35;
+    max-width: 512px;
+}
+
+.btn-hero {
+    background-color: #E6956D;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 18px 35px;
+    border-radius: 15px;
+
+    font-weight: 700;
+    display: inline-block;
+}
+
+.btn-hero:hover {
+    background-color: #E6956D;
+}
+
+
+/* Mascotas */
+
+.mascotas {
+    padding: 80px 24px;
+    background-color: #FFF5E1;
+    margin: 0 auto;
+}
+
+.contenedor-mascotas {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.mascotas h2 {
+    text-align: center;
+    color: #221610;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.linea {
+    width: 90px;
+    height: 4px;
+    background-color: #E6956D;
+    margin: 20px auto 60px;
+}
+
+.historia {
+    color: #EC5B13;
+    font-weight: 600;
+}
+
+.boton-adoptarmasc {
+    background-color: white;
+    border: 2px solid #E6956D;
+    color: #E6956D;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.boton-adoptarmasc:hover {
+    background-color: #E6956D;
+    color: white;
+}
+
+/* Proceso Adopcion */
+
+.proceso {
+    background-color: #FFFFFF;
+    padding-bottom: 120px;
+}
+
+.titulo-proceso {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #221610;
+}
+
+.subtitulo-proceso {
+    font-size: 20px;
+
+    color: #6b6b6b;
+}
+
+.tabla-proceso {
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.tabla-proceso thead th {
+    background-color: #98D8D1;
+}
+
+.tabla-proceso th {
+    color: white;
+    padding: 24px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.tabla-proceso td {
+    padding: 36px 24px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.tabla-proceso .numero-paso {
+    color: #f97316;
+    font-size: 20px;
+}
+
+.boton-proceso {
+    background-color: white;
+    border: 2px solid #98D8D1;
+    color: #98D8D1;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.boton-proceso:hover {
+    background-color: #98D8D1;
+    color: white;
+    border-color: #98D8D1;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #221610;
+    color: #9CA3AF;
+}
+
+.footer-logo {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 900px;
+    line-height: 32px;
+}
+
+.footer-titulo {
+    color: #98D8D1;
+    font-size: 18px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #9CA3AF;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #98D8D1;
+}
+
+.footer-linea {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-copy {
+    color: #9CA3AF;
+    font-size: 18px;
+}
+
+.footer i {
+    color: #E6956D;
+}

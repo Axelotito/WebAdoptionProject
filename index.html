@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/assests/css/mystyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!-- Barra de Navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                    <img src="/assests/imagenes/icon.png" width="20px" alt="icono de pagina">
+                    Rescate y Amor</a>
+                <ul class="navbar-nav d-flex align-items-center gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Mascotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proceso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Formulario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn boton-adoptar" href="#">
+                            Adoptar
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero d-flex align-items-center">
+        <div class="container-fluid ps-5">
+            <div class="hero-contenido">
+
+                <h1 class="fw-bold mt-5"> Salvando Vidas <br>
+                    a través de la <br>
+                    <span>Adopción</span>
+                </h1>
+                <p class="mt-4">
+                    Nuestra misión es rescatar, rehabilitar y encontrar
+                    hogares llenos de amor para animales en situación de
+                    abandono. Dale una segunda oportunidad a un
+                    corazón valiente.
+                </p>
+                <a href="#" class="btn btn-lg btn-hero mt-3">
+                    Conocer Rescatados
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Mascotas -->
+    <section class="mascotas">
+        <div class="contenedor-mascotas">
+
+            <h2>Nuestros Amigos Esperando</h2>
+
+            <div class="linea"></div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-5 overflow-hidden">
+
+                        <img src="/assests/imagenes/mascota1.png" class="card-img-top" alt="">
+
+                        <div class="card-body">
+
+                            <h3 class="fw-bold">
+                                Luna
+                            </h3>
+
+                            <p class="card-text">
+                                Labrador joven, muy juguetona y excelente
+                                con niños. Busca una familia activa.
+                            </p>
+
+                            <p class="historia fw-semibold">
+                                Historia de rescate: Rescatada de un criadero
+                                clandestino, Luna ahora disfruta correr libre por
+                                primera vez.
+                            </p>
+
+                            <a href="#" class="btn boton-adoptarmasc w-100 fw-semibold">
+                                Adoptar
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-5 overflow-hidden">
+
+                        <img src="/assests/imagenes/mascota1.png" class="card-img-top" alt="">
+
+                        <div class="card-body">
+
+                            <h3 class="fw-bold">
+                                Max
+                            </h3>
+
+                            <p class="card-text">
+                                Gato mimoso busca hogar tranquilo para
+                                largas siestas al sol. Muy independiente.
+                            </p>
+
+                            <p class="historia fw-semibold">
+                                Historia de rescate: Encontrado refugiándose bajo
+                                un auto en una tormenta, Max demostró ser un
+                                superviviente nato.
+                            </p>
+
+                            <a href="#" class="btn boton-adoptarmasc w-100 fw-semibold">
+                                Adoptar
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-5 overflow-hidden">
+
+                        <img src="/assests/imagenes/mascota1.png" class="card-img-top" alt="">
+
+                        <div class="card-body">
+
+                            <h3 class="fw-bold">
+                                Bella
+                            </h3>
+
+                            <p class="card-text">
+                                Pastor Alemán protectora y muy inteligente.
+                                Necesita espacio para correr.
+                            </p>
+
+                            <p class="historia fw-semibold">
+                                Historia de rescate: Abandonada atada a un poste,
+                                Bella no ha perdido su lealtad y amor
+                                incondicional por los humanos.
+                            </p>
+
+                            <a href="#" class="btn boton-adoptarmasc w-100 fw-semibold">
+                                Adoptar
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-5 overflow-hidden">
+
+                        <img src="/assests/imagenes/mascota1.png" class="card-img-top" alt="">
+
+                        <div class="card-body">
+
+                            <h3 class="fw-bold">
+                                Rocky
+                            </h3>
+
+                            <p class="card-text">
+                                Pug carismático y sociable. Le encanta estar
+                                rodeado de gente y otros perros.
+                            </p>
+
+                            <p class="historia fw-semibold">
+                                Historia de rescate: Rescatado de las calles con
+                                desnutrición severa, hoy es el perrito más feliz del
+                                refugio.
+                            </p>
+
+                            <a href="#" class="btn boton-adoptarmasc w-100 fw-semibold">
+                                Adoptar
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-5 overflow-hidden">
+
+                        <img src="/assests/imagenes/mascota1.png" class="card-img-top" alt="">
+
+                        <div class="card-body">
+
+                            <h3 class="fw-bold">
+                                Coco
+                            </h3>
+
+                            <p class="card-text">
+                                Gatita activa y curiosa. Siempre está en busca
+                                de su próxima aventura.
+                            </p>
+
+                            <p class="historia fw-semibold">
+                                Historia de rescate: Encontrada atrapada en un
+                                motor, Coco perdió el miedo y ahora es pura
+                                energía y ronroneos.
+                            </p>
+
+                            <a href="#" class="btn boton-adoptarmasc w-100 fw-semibold">
+                                Adoptar
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 rounded-5 overflow-hidden">
+
+                        <img src="/assests/imagenes/mascota1.png" class="card-img-top" alt="">
+
+                        <div class="card-body">
+
+                            <h3 class="fw-bold">
+                                Daisy
+                            </h3>
+
+                            <p class="card-text">
+                                Mestiza dulce y tranquila. La compañera
+                                perfecta para caminar por el parque.
+                            </p>
+
+                            <p class="historia fw-semibold">
+                                Historia de rescate: Deambulaba cerca de una
+                                carretera buscando comida, Daisy ahora espera
+                                un hogar seguro y cálido.
+                            </p>
+
+                            <a href="#" class="btn boton-adoptarmasc w-100 fw-semibold">
+                                Adoptar
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+
+                    <a href="#" class="btn boton-adoptarmasc px-5 py-3 fw-semibold">
+                        Nuestra Familia
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Adopcion -->
+    <section class="proceso py-5 mt-5">
+        <div class="container">
+            <div class="text-center mb-5">
+
+                <h2 class="titulo-proceso fw-bold">
+                    ¿Cómo Adoptar?
+                </h2>
+
+                <p class="subtitulo-proceso mt-3">
+                    Un proceso pensado en asegurar el mejor futuro
+                    para nuestros rescatados.
+                </p>
+
+            </div>
+
+            <div class="table-responsive">
+                <table class="table tabla-proceso align-middle">
+                    <thead>
+                        <tr>
+                            <th>PASO</th>
+                            <th>ETAPA</th>
+                            <th>DESCRIPCIÓN</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td class="numero-paso fw-bold">
+                                01
+                            </td>
+
+                            <td class="fw-bold">
+                                Solicitud
+                            </td>
+
+                            <td>
+                                Completa nuestro formulario con tus datos
+                                básicos y preferencias de mascota.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="numero-paso fw-bold">
+                                02
+                            </td>
+
+                            <td class="fw-bold">
+                                Entrevista
+                            </td>
+
+                            <td>
+                                Conversaremos para conocer tu estilo de vida
+                                y asegurar una buena compatibilidad.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="numero-paso fw-bold">
+                                03
+                            </td>
+
+                            <td class="fw-bold">
+                                Visita al Hogar
+                            </td>
+
+                            <td>
+                                Una breve revisión del espacio donde vivirá
+                                la mascota para su seguridad.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#" class="btn boton-proceso px-5 py-3 fw-bold">
+                Conoce el proceso
+            </a>
+        </div>
+    </section>
+
+    <!-- Seccion Footer -->
+    <footer class="footer py-5 mt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+
+                    <h3 class="footer-logo fw-bold d-flex align-items-center gap-2">
+                        <img src="/assests/imagenes/icon.png" width="20px" alt="icono de pagina">
+                        Rescate y Amor
+                    </h3>
+
+                    <p class="mt-4">
+                        Dedicados a encontrar hogares responsables
+                        para animales en situación de calle y abandono.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="footer-titulo fw-bold">
+                        Navegación
+                    </h4>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3">
+                            <a href="#" class="footer-link">
+                                Mascotas
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="footer-link">
+                                Proceso de Adopción
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">
+                                Formulario
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="footer-titulo fw-bold">
+                        Contacto
+                    </h4>
+                    <div class="mt-4">
+                        <p class="d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope"></i>
+                            hola@rescateyamor.org
+                        </p>
+                        <p class="d-flex align-items-center gap-2">
+                            <i class="bi bi-geo-alt"></i>
+                            Ciudad de México, México
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-linea my-5">
+
+            <div class="text-center footer-copy">
+                <p>
+                    © 2024 Rescate y Amor |
+                    Proyecto Final Programación Web - FES Aragón
+                </p>
+                <p>
+                    Licencia Creative Commons (CC BY-NC)
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
