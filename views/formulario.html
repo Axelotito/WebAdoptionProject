@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Formulario de Adopción - Rescate y Amor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="../assests/css/formulario_styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-md sticky-top px-3">
+        <div class="container-xl">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <span class="material-symbols-outlined text-primary-icon">pets</span>
+                Rescate y Amor
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-2 gap-md-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#mascotas">Mascotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#proceso">Proceso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">Formulario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-md-0 ms-md-2">
+                        <button class="btn btn-adoptar">Adoptar</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="form-wrapper">
+        <div class="form-container">
+            <div class="text-center mb-5">
+                <h2 class="fw-black mb-2">Formulario de Adopción Detallado</h2>
+                <p class="text-muted">Por favor completa el formulario detallado para ayudarnos a encontrar el mejor hogar para nuestras mascotas.</p>
+            </div>
+
+            <form>
+                <!-- Información Personal -->
+                <div class="mb-5">
+                    <h3 class="section-title">Información Personal</h3>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <label class="form-label">Nombre Completo</label>
+                            <input class="form-control" placeholder="Ej: Juan Pérez" type="text" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input class="form-control" placeholder="correo@ejemplo.com" type="email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Teléfono</label>
+                            <input class="form-control" placeholder="Ej: 555-1234" type="tel" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Dirección Completa</label>
+                            <input class="form-control" placeholder="Calle, Número, Ciudad" type="text" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Ocupación</label>
+                            <input class="form-control" placeholder="Ej: Empleado, Estudiante, etc." type="text" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vivienda y Estilo de Vida -->
+                <div class="mb-5">
+                    <h3 class="section-title">Vivienda y Estilo de Vida</h3>
+                    
+                    <div class="mb-4">
+                        <label class="form-label mb-3">Tipo de vivienda</label>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" name="vivienda" type="radio" id="casa-patio">
+                            <label class="form-check-label" for="casa-patio">Casa con patio cerrado</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" name="vivienda" type="radio" id="casa-sin-patio">
+                            <label class="form-check-label" for="casa-sin-patio">Casa sin patio</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="vivienda" type="radio" id="departamento">
+                            <label class="form-check-label" for="departamento">Departamento</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label mb-3">¿Tienes otras mascotas en casa?</label>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="mascota-perro">
+                            <label class="form-check-label" for="mascota-perro">Sí, perros</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="mascota-gato">
+                            <label class="form-check-label" for="mascota-gato">Sí, gatos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="mascota-ninguna">
+                            <label class="form-check-label" for="mascota-ninguna">No, actualmente no tengo mascotas</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interés Específico -->
+                <div class="mb-5">
+                    <label class="form-label">¿Tienes interés en una mascota específica?</label>
+                    <p class="small text-muted mb-2">Si ya viste a un peludito en nuestra sección de Mascotas, escribe su nombre aquí.</p>
+                    <input class="form-control" placeholder="Ej: Luna, Milo, o describe a la mascota que viste..." type="text">
+                </div>
+
+                <!-- Preferencias de Mascota -->
+                <div class="mb-5">
+                    <h3 class="section-title">Preferencias de Mascota</h3>
+                    
+                    <div class="mb-4">
+                        <label class="form-label mb-3">Preferencia de sexo</label>
+                        <div class="d-flex flex-wrap gap-4">
+                            <div class="form-check">
+                                <input class="form-check-input" name="sexo" type="radio" id="sexo-hembra" value="hembra">
+                                <label class="form-check-label" for="sexo-hembra">Hembra</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="sexo" type="radio" id="sexo-macho" value="macho">
+                                <label class="form-check-label" for="sexo-macho">Macho</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="sexo" type="radio" id="sexo-indiferente" value="sin_preferencia">
+                                <label class="form-check-label" for="sexo-indiferente">Sin preferencia</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label mb-3">Tamaño preferido</label>
+                        <div class="d-flex flex-wrap gap-4">
+                            <div class="form-check">
+                                <input class="form-check-input" name="tamano" type="checkbox" id="tamano-pequeno" value="pequeno">
+                                <label class="form-check-label" for="tamano-pequeno">Pequeño</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="tamano" type="checkbox" id="tamano-mediano" value="mediano">
+                                <label class="form-check-label" for="tamano-mediano">Mediano</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="tamano" type="checkbox" id="tamano-grande" value="grande">
+                                <label class="form-check-label" for="tamano-grande">Grande</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label mb-3">Rango de edad preferido</label>
+                        <div class="d-flex flex-wrap gap-4">
+                            <div class="form-check">
+                                <input class="form-check-input" name="edad" type="radio" id="edad-cachorro" value="cachorro">
+                                <label class="form-check-label" for="edad-cachorro">Cachorro</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="edad" type="radio" id="edad-joven" value="joven">
+                                <label class="form-check-label" for="edad-joven">Joven</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="edad" type="radio" id="edad-adulto" value="adulto">
+                                <label class="form-check-label" for="edad-adulto">Adulto</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="edad" type="radio" id="edad-senior" value="senior">
+                                <label class="form-check-label" for="edad-senior">Senior</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label mb-2">Nivel de actividad deseado</label>
+                        <select class="form-select">
+                            <option value="bajo">Bajo</option>
+                            <option value="moderado">Moderado</option>
+                            <option value="alto">Alto</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Motivación -->
+                <div class="mb-5">
+                    <h3 class="section-title">Motivación</h3>
+                    <div>
+                        <label class="form-label mb-2">¿Por qué quieres adoptar?</label>
+                        <textarea class="form-control" rows="5" placeholder="Cuéntanos brevemente qué te motiva a sumar un nuevo miembro a tu familia..."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Enviar Solicitud de Adopción</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container-xl">
+            <div class="row g-5 mb-5">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center gap-2 mb-4">
+                        <span class="material-symbols-outlined" style="color: var(--accent-warm);">pets</span>
+                        <span class="fs-4 fw-black">Rescate y Amor</span>
+                    </div>
+                    <p style="color: #9ca3af;">Dedicados a encontrar hogares responsables para animales en situación de calle y abandono.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html#mascotas">Mascotas</a></li>
+                        <li><a href="index.html#proceso">Proceso de Adopción</a></li>
+                        <li><a href="formulario.html">Formulario</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h4>Contacto</h4>
+                    <ul class="d-flex flex-column gap-3">
+                        <li class="d-flex align-items-center gap-2 mb-0">
+                            <span class="material-symbols-outlined" style="color: var(--accent-warm); font-size: 18px;">mail</span>
+                            hola@rescateyamor.org
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-0">
+                            <span class="material-symbols-outlined" style="color: var(--accent-warm); font-size: 18px;">location_on</span>
+                            Ciudad de México, México
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="mb-1">© 2024 Rescate y Amor | Proyecto Final Programación Web - FES Aragón</p>
+                <p class="mb-0">Licencia Creative Commons (CC BY-NC)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
