@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Mascotas - Rescate y Amor</title>
+    
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link href="../assests/css/mascotas_styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <header role="banner" aria-label="Encabezado - Mascotas">
+    <!-- Barra de navegación fija -->
+    <nav class="navbar navbar-expand-md sticky-top px-3">
+        <div class="container-xl">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="../index.html">
+                <img src="../assests/imagenes/icon.png" width="20px" alt="icono de pagina">
+                Rescate y Amor
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-2 gap-md-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#perros">Mascotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./proceso.html">Proceso de Adopción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Contacto</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-md-0 ms-md-2">
+                        <a href="formulario.html" class="btn btn-primary-custom text-decoration-none">Adoptar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container-xl" role="main" aria-label="Contenido principal - Mascotas">
+        
+        <!-- mascotas y anclas de navegación -->
+        <section class="hero-section">
+            <h1 class="hero-title">Encuentra a tu mejor amigo</h1>
+            <p class="hero-text">Explora nuestra familia de peluditos rescatados. Cada uno tiene una historia única de supervivencia y está esperando pacientemente una segunda oportunidad para llenar tu hogar de amor y alegría.</p>
+            
+            <div class="d-flex flex-wrap gap-3 mt-4">
+                <a href="#perros" class="btn btn-primary-custom text-decoration-none">Perros</a>
+                <a href="#gatos" class="btn btn-outline-custom text-decoration-none">Gatos</a>
+                <a href="#otros" class="btn btn-outline-custom text-decoration-none">Otros</a>
+            </div>
+        </section>
+
+        <!-- Sección: Perros -->
+        <section id="perros" class="mb-5">
+            <div class="section-title-wrapper">
+                <span class="material-symbols-outlined icon-primary fs-2">pets</span>
+                <h2>Nuestros Valientes Perros</h2>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Tarjeta perro 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/dog/melissa197-dog-8781844.jpg" alt="Foto de Luna">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Luna</h3>
+                            <p class="card-text">Rescatada de un criadero clandestino. Luna ha superado sus miedos y es muy cariñosa; busca una familia paciente que le enseñe lo que es el calor de un hogar verdadero.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Luna</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta perro 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/dog/furry_portraits-dog-7770426_1920.jpg" alt="Foto de Max">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Max</h3>
+                            <p class="card-text">Abandonado atado a un poste. Tras completar con éxito su rehabilitación conductual, Max es un perro protector y brillante que anhela una familia activa.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Max</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta perro 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/dog/gumikutya-pet-10072659.jpg" alt="Foto de Rocky">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Rocky</h3>
+                            <p class="card-text">Tras el fallecimiento de su dueño terminó en el refugio. Rocky está deprimido y merece pasar sus años dorados en un sillón suave con compañía constante.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Rocky</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta perro 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/dog/matyasvargaphoto-animal-6845972.jpg" alt="Foto de Toby">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Toby</h3>
+                            <p class="card-text">Rescatado de una zona industrial. Es un perrito joven, lleno de energía y sumamente sociable con otros perros. Le encantan las pelotas y los largos paseos.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Toby</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta perro 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/dog/katerinavulcova-animal-4085255.jpg" alt="Foto de Maya">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Maya</h3>
+                            <p class="card-text">Vagaba por una carretera bajo la lluvia. Maya es una perrita tranquila y muy leal que busca un hogar donde se sienta protegida y amada por siempre.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Maya</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta perro 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/dog/katrinbechtel-dog-7956828.jpg" alt="Foto de Bruno">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Bruno</h3>
+                            <p class="card-text">Bruno fue rescatado de condiciones de maltrato. A pesar de su pasado, es un gigante noble que solo quiere recostar su cabeza en tus rodillas.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Bruno</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Gatos -->
+        <section id="gatos" class="mb-5">
+            <div class="section-title-wrapper">
+                <span class="material-symbols-outlined icon-secondary fs-2">pets</span>
+                <h2>Nuestros Dulces Gatos</h2>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Tarjeta gato 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/cat/karlee-j-photography-cat-8436843.jpg" alt="Foto de Milo">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Milo</h3>
+                            <p class="card-text">Encontrado en una caja bajo la lluvia. Tras meses de socialización, Milo ha florecido en un gatito dulce y agradecido que disfruta de largas siestas al sol.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Milo</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta gato 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/cat/katya-guseva0-cat-2605502_1920.jpg" alt="Foto de Oliver">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Oliver</h3>
+                            <p class="card-text">Rescatado de desnutrición severa. Hoy Oliver es un gato majestuoso y sumamente leal. Es el compañero perfecto y sereno para tardes de lectura.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Oliver</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta gato 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/cat/alexas_fotos-cat-1333926.jpg" alt="Foto de Simba">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Simba</h3>
+                            <p class="card-text">Único sobreviviente de su camada. Criado con biberón por voluntarios, ahora está sano y fuerte, listo para comenzar su nueva vida contigo.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Simba</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta gato 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/cat/vlaaitje-cats-8096304.jpg" alt="Foto de Michi">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Michi</h3>
+                            <p class="card-text">Rescatada de un tejado peligroso. Michi es una exploradora nata, llena de curiosidad y muy habladora; siempre tiene algo que contarte.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Michi</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta gato 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/cat/distelapparath-animal-4436152.jpg" alt="Foto de Salem">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Salem</h3>
+                            <p class="card-text">Salem es un gato negro elegante que fue abandonado por supersticiones injustas. Es el gato más dulce y ronroneador que conocerás.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Salem</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta gato 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/cat/patmot-cat-7211080.jpg" alt="Foto de Nala">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Nala</h3>
+                            <p class="card-text">Perdió una patita en un accidente, pero su espíritu sigue intacto. Es muy ágil, cariñosa y busca una familia que vea más allá de su cicatriz.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Nala</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Otros -->
+        <section id="otros" class="mb-5 pb-5">
+            <div class="section-title-wrapper">
+                <span class="material-symbols-outlined icon-tertiary fs-2">flutter_dash</span>
+                <h2>Otros Amigos Rescatados</h2>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Tarjeta otro 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/others/bru-no-rabbit-839297.jpg" alt="Foto de BunBun">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">BunBun</h3>
+                            <p class="card-text">Rescatado de una feria local. BunBun es un conejo tranquilo que disfruta de las zanahorias frescas y de saltar libremente en espacios seguros.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a BunBun</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Tarjeta otro 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card animal-card">
+                        <div class="card-img-wrapper">
+                            <img src="../assests/imagenes/others/em80-tortoise-3691200.jpg" alt="Foto de Rayo">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4">Rayo</h3>
+                            <p class="card-text">Rayo es una tortuga que fue abandonada en un parque. Es paciente, observadora y busca un hogar con un jardín soleado o un gran terrario.</p>
+                            <a href="formulario.html" class="btn-adopt-card">Adoptar a Rayo</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contacto" role="contentinfo" aria-label="Pie de página - Contacto">
+        <div class="container-xl">
+            <div class="row g-5 mb-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center gap-2 mb-4">
+                        <span class="material-symbols-outlined" style="color: var(--primary-color);">pets</span>
+                        <span class="fs-4 fw-black font-montserrat">Rescate y Amor</span>
+                    </div>
+                    <p style="color: #9ca3af;">Dedicados a encontrar hogares responsables para animales en situación de calle y abandono.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#perros">Mascotas</a></li>
+                        <li><a href="./proceso.html">Proceso de Adopción</a></li>
+                        <li><a href="./formulario.html">Formulario</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h4>Contacto</h4>
+                    <ul class="d-flex flex-column gap-3">
+                        <li class="d-flex align-items-center gap-2 mb-0">
+                            <span class="material-symbols-outlined" style="color: var(--primary-color); font-size: 18px;">mail</span>
+                            hola@rescateyamor.org
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-0">
+                            <span class="material-symbols-outlined" style="color: var(--primary-color); font-size: 18px;">location_on</span>
+                            Ciudad de México, México
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="mb-1">© 2026 Rescate y Amor | Proyecto Final Programación Web - FES Aragón</p>
+                <p class="mb-0">Licencia Creative Commons (CC BY-NC)</p>
+                <p class="footer-credit mb-0">Creado por Cruz Granados Luis Axel Y Diego Yavhed Medinilla Gonzalez</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

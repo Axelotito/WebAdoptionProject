@@ -1,0 +1,258 @@
+/* estilos */
+:root {
+  --primary-color: #E6956D;
+  --primary-dark: #D17A4F;
+  --secondary-color: #98D8D1;
+  --tertiary-color: #5EB6B9;
+  --background-cream: #FFF5E1;
+  --background-light: #f8f6f6;
+  --background-dark: #221610;
+  --text-main: #221610;
+  --text-muted: #6b5a55;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background-cream);
+  color: var(--text-main);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+p, li, .nav-link, .form-label, .form-check-label, .btn-submit, .btn-adoptar, .pet-selector-btn, .section-title, footer p, footer a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(230, 149, 109, 0.2);
+}
+
+.navbar-brand {
+  color: var(--text-main);
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.nav-link {
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.btn-adoptar {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-adoptar:hover {
+  background-color: var(--primary-dark);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Alineación de íconos Material */
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.text-primary-icon {
+  color: var(--primary-color);
+}
+
+/* Contenedor del formulario */
+.form-wrapper {
+  padding: 5rem 1.5rem;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: var(--text-main);
+  border-bottom: 1px solid rgba(230, 149, 109, 0.2);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Controles del formulario */
+.form-label {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+  background-color: var(--background-light);
+  border: 1px solid rgba(230, 149, 109, 0.3);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(230, 149, 109, 0.25);
+}
+
+.form-check-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-check-input {
+  border-color: rgba(230, 149, 109, 0.5);
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-submit {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  width: 100%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.02);
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-dark);
+  color: white;
+  padding: 4rem 1.5rem;
+}
+
+footer h4 {
+  color: var(--secondary-color);
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 1rem;
+  color: #9ca3af;
+}
+
+footer a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* Crédito de creadores en el footer */
+.footer-credit {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* =========================================
+   Logica de mostrar/ocultar secciones condicionales del formulario
+   ========================================= */
+
+.hidden-section {
+  display: none;
+}
+
+/* Mostrar preferencias cuando se selecciona Perro o Gato */
+#pet-dog:checked ~ .conditional-preferences,
+#pet-cat:checked ~ .conditional-preferences {
+  display: block;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Mostrar campo de texto cuando se selecciona Otro */
+#pet-other:checked ~ .conditional-other {
+  display: block;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Estilos de las etiquetas de selección (Perro, Gato, Otro) */
+.pet-selector-btn {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid rgba(230, 149, 109, 0.3);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  background-color: var(--background-light);
+  color: var(--text-main);
+  font-weight: 700;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.pet-selector-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: rgba(236, 91, 19, 0.05);
+}
+
+/* Cambio visual en las etiquetas cuando su radio button asociado está marcado */
+#pet-dog:checked ~ .pet-selection-wrapper .label-dog,
+#pet-cat:checked ~ .pet-selection-wrapper .label-cat,
+#pet-other:checked ~ .pet-selection-wrapper .label-other {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(236, 91, 19, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

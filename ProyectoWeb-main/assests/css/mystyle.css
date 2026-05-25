@@ -1,0 +1,320 @@
+/* Paleta y tipografía base */
+:root {
+    --primary-color: #E6956D;
+    --primary-dark: #D17A4F;
+    --secondary-color: #98D8D1;
+    --tertiary-color: #5EB6B9;
+    --neutral-color: #FFF5E1;
+    --neutral-soft: #f8f6f6;
+    --text-dark: #221610;
+    --text-muted: #53433c;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: var(--neutral-color);
+    color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+p, li, .nav-link, .btn-hero, .boton-adoptarmasc, .boton-proceso, .historia {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Barra de navegacion */
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    font-weight: 900;
+}
+
+.nav-link {
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.btn.boton-adoptar {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 9999px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.boton-adoptar:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+/* Sección de mascotas */
+
+.hero {
+    min-height: 750px;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.45),
+            rgba(255, 255, 255, 0.65)),
+        url("../imagenes/heroimg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-contenido {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: 0;
+    color: var(--text-dark);
+}
+
+.hero span {
+    color: var(--primary-color);
+}
+
+.hero p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: var(--text-muted);
+    max-width: 512px;
+}
+
+.btn-hero {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 18px 35px;
+    border-radius: 15px;
+
+    font-weight: 700;
+    display: inline-block;
+}
+
+.btn-hero:hover {
+    background-color: var(--primary-dark);
+}
+
+
+/* Mascotas */
+
+.mascotas {
+    padding: 80px 24px;
+    background-color: var(--neutral-color);
+    margin: 0 auto;
+}
+
+.contenedor-mascotas {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.mascotas h2 {
+    text-align: center;
+    color: var(--text-dark);
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.linea {
+    width: 90px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 20px auto 60px;
+}
+
+.historia {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Animación de tarjetas en portada, igual a la página de mascotas */
+.mascotas .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mascotas .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.mascotas .card-img-top {
+    transition: transform 0.5s ease;
+}
+
+.mascotas .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.boton-adoptarmasc {
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.boton-adoptarmasc:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Alinear los botones 'Adoptar' al fondo de las tarjetas */
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-body .boton-adoptarmasc {
+    margin-top: auto;
+}
+
+/* Proceso Adopcion */
+
+.proceso {
+    background-color: #FFFFFF;
+    padding-bottom: 120px;
+}
+
+.titulo-proceso {
+    font-size: 36px;
+    color: var(--text-dark);
+}
+
+.subtitulo-proceso {
+    font-size: 20px;
+
+    color: var(--text-muted);
+}
+
+.tabla-proceso {
+    background-color: var(--neutral-color);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.tabla-proceso thead th {
+    background-color: var(--secondary-color);
+}
+
+.tabla-proceso th {
+    color: white;
+    padding: 24px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.tabla-proceso td {
+    padding: 36px 24px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.tabla-proceso .numero-paso {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.boton-proceso {
+    background-color: white;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.boton-proceso:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+
+/* Footer */
+
+.footer {
+    background-color: #221610;
+    color: #9CA3AF;
+}
+
+/* Crédito de creadores en el footer (estilos compartidos) */
+.footer-credit {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* Imágenes de tarjetas: tamaño uniforme */
+.card-img-top {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+.footer-logo {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 900px;
+    line-height: 32px;
+}
+
+.footer-titulo {
+    color: #98D8D1;
+    font-size: 18px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #9CA3AF;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #98D8D1;
+}
+
+.footer-linea {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-copy {
+    color: #9CA3AF;
+    font-size: 18px;
+}
+
+.footer i {
+    color: #E6956D;
+}

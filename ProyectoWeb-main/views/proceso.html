@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Proceso de Adopción - Rescate y Amor</title>
+    
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link href="../assests/css/proceso_styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <header role="banner" aria-label="Encabezado - Proceso">
+    <!-- Barra de navegación fija -->
+    <nav class="navbar navbar-expand-md sticky-top px-3">
+        <div class="container-xl">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="../index.html">
+                <img src="../assests/imagenes/icon.png" width="20px" alt="Icono de la página">
+                Rescate y Amor
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-2 gap-md-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./mascotas.html">Mascotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./proceso.html">Proceso de Adopción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Contacto</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-md-0 ms-md-2">
+                        <a href="formulario.html" class="btn-adoptar text-decoration-none">Adoptar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container-xl py-5" role="main" aria-label="Contenido principal - Proceso">
+        
+        <!-- Sección de encabezado -->
+        <div class="text-center mb-5 mt-4">
+            <h1 class="title-main display-4">Proceso de Adopción</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">Conoce los pasos para darle la bienvenida a un nuevo miembro de la familia. Estamos aquí para acompañarte en cada etapa de este maravilloso viaje.</p>
+        </div>
+
+        <!-- Sección de línea de tiempo -->
+        <div class="timeline">
+            
+            <!-- Paso 1 -->
+            <div class="timeline-step">
+                <div class="timeline-icon-container">
+                    <div class="timeline-icon bg-warm">
+                        <span class="material-symbols-outlined">description</span>
+                    </div>
+                    <div class="timeline-line warm"></div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="h4">Paso 1: Solicitud</h3>
+                    <p>Completa nuestro formulario en línea con tus datos, estilo de vida y preferencias. Queremos asegurarnos de encontrar el compañero perfecto para ti.</p>
+                </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="timeline-step">
+                <div class="timeline-icon-container">
+                    <div class="timeline-icon border-warm">
+                        <span class="material-symbols-outlined">forum</span>
+                    </div>
+                    <div class="timeline-line warm"></div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="h4">Paso 2: Entrevista</h3>
+                    <p>Una charla amigable con uno de nuestros voluntarios. Es una oportunidad para conocernos mejor, resolver tus dudas y hablar sobre las responsabilidades de tener una mascota.</p>
+                </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="timeline-step">
+                <div class="timeline-icon-container">
+                    <div class="timeline-icon border-mint">
+                        <span class="material-symbols-outlined">home</span>
+                    </div>
+                    <div class="timeline-line mint"></div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="h4">Paso 3: Visita al hogar</h3>
+                    <p>Un voluntario visitará tu casa (física o virtualmente) para asegurar que el entorno sea seguro y adecuado para el peludito que deseas adoptar.</p>
+                </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="timeline-step">
+                <div class="timeline-icon-container">
+                    <div class="timeline-icon bg-mint">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="h4">Paso 4: Bienvenida</h3>
+                    <p>¡El momento más feliz! Firma el contrato de adopción, paga la cuota solidaria y llévate a tu nuevo mejor amigo a casa para empezar una vida juntos.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sección de preguntas frecuentes -->
+        <div class="mt-5 pt-4">
+            <div class="text-center mb-4">
+                <h2 class="title-main display-6">Preguntas Frecuentes</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="faq-container">
+                <div class="accordion" id="accordionFAQ">
+                    
+                    <!-- Pregunta frecuente 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                ¿Cuánto tiempo dura el proceso de adopción?
+                            </button>
+                        </h2>
+                        <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Generalmente, el proceso completo toma entre 1 a 2 semanas. Esto depende en gran medida de tu disponibilidad para agendar la entrevista y la visita al hogar, así como de la cantidad de solicitudes que estemos procesando.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta frecuente 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                ¿Cuáles son los requisitos básicos para adoptar?
+                            </button>
+                        </h2>
+                        <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Debes ser mayor de edad, contar con una identificación oficial, comprobante de domicilio, estar de acuerdo con las visitas de seguimiento y tener la capacidad económica y de tiempo para brindarle una buena calidad de vida a la mascota.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta frecuente 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                ¿Por qué hay una cuota de adopción?
+                            </button>
+                        </h2>
+                        <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                La cuota de adopción nos ayuda a cubrir parcialmente los gastos veterinarios previos de la mascota (vacunas, desparasitación, esterilización) y nos permite seguir rescatando a más animales en situación de calle.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de llamada a la acción -->
+        <div class="cta-card">
+            <h2 class="title-main mb-3">¿Listo para empezar tu aventura?</h2>
+            <p class="text-muted text-lg mx-auto" style="max-width: 600px;">Si ya estás decidido a darle un hogar lleno de amor a un peludito, inicia el proceso llenando tu solicitud ahora mismo.</p>
+            <a href="formulario.html" class="btn-cta">Llenar Solicitud de Adopción</a>
+        </div>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contacto" role="contentinfo" aria-label="Pie de página - Contacto">
+        <div class="container-xl">
+            <div class="row g-5 mb-5">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center gap-2 mb-4">
+                        <span class="material-symbols-outlined" style="color: var(--accent-warm);">pets</span>
+                        <span class="fs-4 fw-bold">Rescate y Amor</span>
+                    </div>
+                    <p style="color: #9ca3af;">Dedicados a encontrar hogares responsables para animales en situación de calle y abandono.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="./mascotas.html">Mascotas</a></li>
+                        <li><a href="./proceso.html">Proceso de Adopción</a></li>
+                        <li><a href="./formulario.html">Formulario</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h4>Contacto</h4>
+                    <ul class="d-flex flex-column gap-3">
+                        <li class="d-flex align-items-center gap-2 mb-0">
+                            <span class="material-symbols-outlined" style="color: var(--accent-warm); font-size: 18px;">mail</span>
+                            hola@rescateyamor.org
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-0">
+                            <span class="material-symbols-outlined" style="color: var(--accent-warm); font-size: 18px;">location_on</span>
+                            Ciudad de México, México
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="mb-1">© 2026 Rescate y Amor | Proyecto Final Programación Web - FES Aragón</p>
+                <p class="mb-0">Licencia Creative Commons (CC BY-NC)</p>
+                <p class="footer-credit mb-0">Creado por Cruz Granados Luis Axel Y Diego Yavhed Medinilla Gonzalez</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
